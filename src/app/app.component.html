@@ -1,26 +1,22 @@
 <div class="wrapper">
-
   <header>
-  <!-- Insert header here -->
-  something
+    <!-- Insert header here -->
+    something
   </header>
 
   <content class="overflow-y-auto scrollbar">
-   
     <router-outlet></router-outlet>
 
     <div *ngFor="let item of [].constructor(100)">
-
-      Content 
-      <br>
-
+      Content
+      <br />
     </div>
-    
-    </content>
+  </content>
 
-  <footer>
-  <!-- Insert footer here -->
- footer
+  <footer fxLayoutAlign="space-around center">
+    <!-- Insert footer here -->
+    <span class="material-icons-round black-2">home</span>
+    <span class="material-icons-round black-2">table_view</span>
+    <span class="material-icons-round black-2">apps</span>
   </footer>
-
 </div>
