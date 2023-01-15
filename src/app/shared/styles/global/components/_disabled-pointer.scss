@@ -1,0 +1,47 @@
+/// Wenn ein Inputfeld disabled ist, bekommt es den cursor not-allowed.
+/// @group ComponentClasses
+/// @name pointer-not-allowed
+/// @example <kendo-label text="someText" fxFlex="someNumber">
+///             <kendo-textbox
+///               formControlName="bic"
+///               placeholder="BIC"
+///               [clearButton]="true"
+///             >
+///             </kendo-textbox>
+///          </kendo-label>
+/// @author Franz Scholz
+kendo-label:hover:has(.k-disabled) {
+  cursor: not-allowed !important
+}
+
+/// Wenn eine checkbox disabled ist, bekommt es den cursor not-allowed. Class "checkbox-container" muss übergeordnet gesetzt werden.
+/// @group ComponentClasses
+/// @name pointer-not-allowed
+/// @example <div fxFlex="100" class="checkbox-container">
+///             <input type="checkbox" #sepaLastschrift kendoCheckBox formControlName="sepaLastschrift" (change)="changeSepaStatus();"/>
+///             <kendo-label
+///               class="k-checkbox-label label-right"
+///               [for]="sepaLastschrift"
+///               text="SEPA-Lastschrift"
+///             >
+///             </kendo-label>
+///          </div>
+/// @author Franz Scholz
+.checkbox-container:hover:has(.k-checkbox:disabled){
+  cursor: not-allowed !important
+}
+
+/// Wenn eine button disabled ist, bekommt er den cursor not-allowed. 
+/// @group ComponentClasses
+/// @name pointer-not-allowed
+/// @author Franz Scholz
+// .k-button:hover:has(.k-disabled){
+//   cursor: not-allowed !important
+// }
+// kendo-button:hover:has(.k-disabled){
+//   cursor: not-allowed !important
+// }
+// kendo-button:disabled:hover, kendo-button.k-disabled:hover{
+//   cursor: not-allowed !important
+
+// }

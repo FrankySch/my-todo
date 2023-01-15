@@ -1,0 +1,185 @@
+/**** CSS-Attributes ****/
+
+/*** LAYOUTING ***/
+
+/// Sets the height values for the .ht-[xs|sm|md|lg|full|full-vh]{} utility class
+/// @group Utilities
+/// @name ht-[xs|sm|md|lg|full|full-vh]
+/// @author Franz Scholz
+$ht-xs: 12%;
+$ht-sm: 25%;
+$ht-md: 50%;
+$ht-lg: 75%;
+$ht-full: 100%;
+$ht-full-vh: 100vh;
+/// Sets the width values for the .wt-[xs|sm|md|lg|full]{} utility class
+/// @group Utilities
+/// @name ht-[xs|sm|md|lg|full]
+/// @author Franz Scholz
+$wt-xs: 12%;
+$wt-sm: 25%;
+$wt-md: 50%;
+$wt-lg: 75%;
+$wt-full: 100%;
+
+/// Sets the margin values for the .label-right{} utility class
+/// @group Utilities
+/// @name label-right
+/// @author Franz Scholz
+$label-right: 10px;
+/// Sets the margin values for the .label-left{} utility class
+/// @group Utilities
+/// @name label-left
+/// @author Franz Scholz
+$label-left: 10px;
+
+/*** FONTS ***/
+
+/// Sets the font size values for the .fs-[xs|sm|md|lg|xl]{} utility class
+/// @group Utilities
+/// @name fs-[xs|sm|md|lg|xl]
+/// @author Franz Scholz
+$fs-xs: 0.7rem;
+$fs-sm: 0.9rem;
+$fs-md: 1rem;
+$fs-lg: 1.5rem;
+$fs-xl: 3rem;
+
+/// Sets the font weight values for the .fw-[xs|sm|md|lg]{} utility class
+/// @group Utilities
+/// @name fw-[xs|sm|md|lg|xs]
+/// @author Franz Scholz
+$fw-xs: 100;
+$fw-sm: 200;
+$fw-md: normal;
+$fw-lg: bolder;
+
+/// Sets the font weight values for the .ls-[xs|sm|md|lg]{} utility class
+/// @group Utilities
+/// @name ls-[xs|sm|md|lg]
+/// @author Franz Scholz
+$ls-xs: 0.3px;
+$ls-sm: 0.7px;
+$ls-md: 2.3px;
+$ls-lg: 4.8px;
+
+/*** SPACES ***/
+
+/// Sets all padding values for the .p-[xs|sm|md|lg|xl]{} utility class
+/// @group Utilities
+/// @name p-[xs|sm|md|lg|xl]
+/// @author Franz Scholz
+$p-xs: 5px;
+$p-sm: 10px;
+$p-md: 15px;
+$p-lg: 21px;
+$p-xl: 31px;
+
+/// Sets the top padding value for the .pt-[xs|sm|md|lg|xl]{} utility class
+/// @group Utilities
+/// @name pt-[xs|sm|md|lg|xl]
+/// @author Franz Scholz
+$pt-xs: 5px;
+$pt-sm: 10px;
+$pt-md: 15px;
+$pt-lg: 21px;
+$pt-xl: 31px;
+
+/// Sets the padding value for the .pr-[xs|sm|md|lg|xl]{} utility class
+/// @group Utilities
+/// @name pr-[xs|sm|md|lg|xl]
+/// @author Franz Scholz
+$pr-xs: 5px;
+$pr-sm: 10px;
+$pr-md: 15px;
+$pr-lg: 21px;
+$pr-xl: 31px;
+
+/// Sets the padding value for the .pb-[xs|sm|md|lg|xl]{} utility class
+/// @group Utilities
+/// @name pb-[xs|sm|md|lg|xl]
+/// @author Franz Scholz
+$pb-xs: 5px;
+$pb-sm: 10px;
+$pb-md: 15px;
+$pb-lg: 21px;
+$pb-xl: 31px;
+
+/// Sets the padding value for the .pl-[xs|sm|md|lg|xl]{} utility class
+/// @group Utilities
+/// @name pl-[xs|sm|md|lg|xl]
+/// @author Franz Scholz
+$pl-xs: 5px;
+$pl-sm: 10px;
+$pl-md: 15px;
+$pl-lg: 21px;
+$pl-xl: 31px;
+
+// TODO -> ml- & mr-
+/// Sets the margin values for the .m-[xs|sm|md|lg]{} utility class
+/// @group Utilities
+/// @name m-[xs|sm|md|lg]
+/// @author Franz Scholz
+$m-xs: 5px;
+$m-sm: 10px;
+$m-md: 15px;
+$m-lg: 21px;
+
+/// Sets the top padding value for the .mt-[xs|sm|md|lg]{} utility class
+/// @group Utilities
+/// @name mt-[xs|sm|md|lg|xlg]
+/// @author Franz Scholz
+$mt-xs: 5px;
+$mt-sm: 10px;
+$mt-md: 15px;
+$mt-lg: 21px;
+$mt-xlg: 34px;
+
+/// Sets the padding value for the .mr-[xs|sm|md|lg]{} utility class
+/// @group Utilities
+/// @name mr-[xs|sm|md|lg]
+/// @author Franz Scholz
+$mr-xs: 5px;
+$mr-sm: 10px;
+$mr-md: 15px;
+$mr-lg: 21px;
+
+/// Sets the padding value for the .mb-[xs|sm|md|lg]{} utility class
+/// @group Utilities
+/// @name mb-[xs|sm|md|lg]
+/// @author Franz Scholz
+$mb-xs: 5px;
+$mb-sm: 10px;
+$mb-md: 15px;
+$mb-lg: 21px;
+
+/// Sets the padding value for the .ml-[xs|sm|md|lg]{} utility class
+/// @group Utilities
+/// @name ml-[xs|sm|md|lg]
+/// @author Franz Scholz
+$ml-xs: 5px;
+$ml-sm: 10px;
+$ml-md: 15px;
+$ml-lg: 21px;
+
+/*** APPERANCE ***/
+
+/// Sets the opacity values for the .opacity-[xs|sm|md|lg]{} utility class
+/// @group Utilities
+/// @name opacity-[xs|sm|md|lg]
+/// @author Franz Scholz
+$opacity-xs: 0.75;
+$opacity-sm: 0.6;
+$opacity-md: 0.5;
+$opacity-lg: 0.25;
+
+/// Sets the border values for the .br-[xs|sm|md|lg]{} utility class
+/// @group Utilities
+/// @name br-[xs|sm|md|lg]
+/// @author Franz Scholz
+$br-xs: 8px;
+$br-sm: 10px;
+$br-md: 12px;
+$br-lg: 18px;
+
+/**** Custom Attributes ****/

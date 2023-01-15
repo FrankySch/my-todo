@@ -1,0 +1,197 @@
+/// Sets the max-width value for the xs breakpoint
+/// Values are from the angular flex layout system
+/// @group Utilities
+/// @name $breakpoint-xs-max
+/// @author Franz Scholz
+$breakpoint-xs-max: 599px;
+/// Sets the max-width value for the sm breakpoint
+/// Values are from the angular flex layout system
+/// @group Utilities
+/// @name $breakpoint-sm-max
+/// @author Franz Scholz
+$breakpoint-sm-max: 959px;
+/// Sets the max-width value for the md breakpoint
+/// Values are from the angular flex layout system
+/// @group Utilities
+/// @name $breakpoint-md-max
+/// @author Franz Scholz
+$breakpoint-md-max: 1279px;
+/// Sets the max-width value for the lg breakpoint
+/// Values are from the angular flex layout system
+/// @group Utilities
+/// @name $breakpoint-lg-max
+/// @author Franz Scholz
+$breakpoint-lg-max: 1919px;
+/// Sets the max-width value for the xl breakpoint
+/// Values are from the angular flex layout system
+/// @group Utilities
+/// @name $breakpoint-xl-max
+/// @author Franz Scholz
+$breakpoint-xl-max: 5000px;
+
+// use only if needed
+$breakpoint-lt-sm-max: 599px;
+$breakpoint-lt-md-max: 959px;
+$breakpoint-lt-lg-max: 1279px;
+$breakpoint-lt-xl-max: 1919px;
+// use only if needed
+$breakpoint-gt-xs-max: 600px;
+$breakpoint-gt-sm-max: 960px;
+$breakpoint-gt-md-max: 1280px;
+$breakpoint-gt-lg-max: 1920px;
+
+/// Devices/screens smaller than xs.
+/// Use xs breakpoints if none of the utility classes matches the needed style for angular inline breakpoints: [ngClass.xs]="utilityClassName".
+/// First of all you need to import the breakpoints.scss file into the current .scss file.
+/// Then include this breakpoint into the custom class.
+/// @group Utilities
+/// @name breakpoint-xs
+/// @example
+/// .exampleClass {
+///    @include xs {
+///       font-size: 3rem
+///    }
+/// }
+/// @author Franz Scholz
+@mixin xs {
+  @media (max-width: $breakpoint-xs-max) {
+    @content;
+  }
+}
+/// Devices/screens smaller than sm.
+/// Use sm breakpoints if none of the utility classes matches the needed style for angular inline breakpoints: [ngClass.sm]="utilityClassName".
+/// First of all you need to import the breakpoints.scss file into the current .scss file.
+/// Then include this breakpoint into the custom class.
+/// @group Utilities
+/// @name breakpoint-sm
+/// @example
+/// .exampleClass {
+///    @include sm {
+///       font-size: 3rem
+///    }
+/// }
+/// @author Franz Scholz
+@mixin sm {
+  @media (max-width: $breakpoint-sm-max) {
+    @content;
+  }
+}
+/// Devices/screens smaller than md.
+/// Use md breakpoints if none of the utility classes matches the needed style for angular inline breakpoints: [ngClass.md]="utilityClassName".
+/// First of all you need to import the breakpoints.scss file into the current .scss file.
+/// Then include this breakpoint into the custom class.
+/// @group Utilities
+/// @name breakpoint-md
+/// @example
+/// .exampleClass {
+///    @include md {
+///       font-size: 3rem
+///    }
+/// }
+/// @author Franz Scholz
+@mixin md {
+  @media (max-width: $breakpoint-md-max) {
+    @content;
+  }
+}
+/// Devices/screens smaller than lg.
+/// Use lg breakpoints if none of the utility classes matches the needed style for angular inline breakpoints: [ngClass.lg]="utilityClassName".
+/// First of all you need to import the breakpoints.scss file into the current .scss file.
+/// Then include this breakpoint into the custom class.
+/// @group Utilities
+/// @name breakpoint-lg
+/// @example
+/// .exampleClass {
+///    @include lg {
+///       font-size: 3rem
+///    }
+/// }
+/// @author Franz Scholz
+@mixin lg {
+  @media (max-width: $breakpoint-lg-max) {
+    @content;
+  }
+}
+/// Devices/screens smaller than xl.
+/// Use xl breakpoints if none of the utility classes matches the needed style for angular inline breakpoints: [ngClass.xl]="utilityClassName".
+/// First of all you need to import the breakpoints.scss file into the current .scss file.
+/// Then include this breakpoint into the custom class.
+/// @group Utilities
+/// @name breakpoint-xl
+/// @example
+/// .exampleClass {
+///    @include xl {
+///       font-size: 3rem
+///    }
+/// }
+/// @author Franz Scholz
+@mixin xl {
+  @media (max-width: $breakpoint-xl-max) {
+    @content;
+  }
+}
+/// Use scss dynamic breakpoint if ngClass breakpoint is not fitting the needed screensize.
+/// [ngClass.<NeededBreakpointSizeNotExisting>]="utilityClassName"
+/// @group Utilities
+/// @name breakpoint
+/// @type Number
+/// @example
+/// .exampleClass {
+///    @include xs {
+///       font-size: 3rem
+///    }
+/// }
+/// @author Franz Scholz
+@mixin breakpoint($bp: 0) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+
+/* example for simple understanding without mixins */
+// only one media query can be active and it is the one that is mathcing the given values.
+// the following approach takes the default class attributes as default and every new media below should have a smaller screen size. So that the least one should represent the smartphone.
+// .class {
+//   text-align: center; // enabled as default, mostly for standard screens and HD/FullDH
+//   font-size: $header-font-size; // enabled as default, mostly for standard screens and HD/FullDH
+
+//   @media (max-width: $breakpoint-xl-max) {
+//     // is enabled if screen resolution/size is lower than 5000px
+//     font-size: 3rem
+//   }
+//   @media (max-width: $breakpoint-lg-max) {
+//     // is enabled if screen resolution/size is lower than 1919px
+//     font-size: 2rem
+//   }
+//   @media (max-width: $breakpoint-md-max) {
+//     // is enabled if screen resolution/size is lower than 1279px
+//     font-size: 0.7rem
+//   }
+// }
+
+/* actual/complete breakpoint setup of angular flex */
+
+// @media (max-width: $breakpoint-xs-max){
+// }
+
+// --
+// $breakpoint-xs: 'screen and (max-width: 599px)';
+// $breakpoint-sm: 'screen and (min-width: 600px) and (max-width: 959px)';
+// $breakpoint-md: 'screen and (min-width: 960px) and (max-width: 1279px)';
+// $breakpoint-lg: 'screen and (min-width: 1280px) and (max-width: 1919px)';
+// $breakpoint-xl: 'screen and (min-width: 1920px) and (max-width: 5000px)';
+
+// $breakpoint-lt-sm: 'screen and (max-width: 599px)';
+// $breakpoint-lt-md: 'screen and (max-width: 959px)';
+// $breakpoint-lt-lg: 'screen and (max-width: 1279px)';
+// $breakpoint-lt-xl: 'screen and (max-width: 1919px)';
+
+// $breakpoint-gt-xs: 'screen and (min-width: 600px)';
+// $breakpoint-gt-sm: 'screen and (min-width: 960px)';
+// $breakpoint-gt-md: 'screen and (min-width: 1280px)';
+// $breakpoint-gt-lg: 'screen and (min-width: 1920px)';
+
+// @media #{$breakpoint-xs} {
+//   font-size: $base-font-size*1.2;
+//   line-height: $base-line-height*1.2;
+// }

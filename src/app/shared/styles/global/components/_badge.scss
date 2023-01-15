@@ -1,0 +1,73 @@
+/// Defines a global extra small badge style.
+/// Except background and text color which needs to be set as separate utility class on an element.
+/// @group ComponentClasses
+/// @name badge-xs
+/// @example <div class="badge-xs"></div>
+/// @author Franz Scholz
+.badge-xs {
+  max-height: 5px !important;
+  max-width: 5px !important;
+  min-height: 5px !important;
+  min-width: 5px !important;
+  border-radius: 14px;
+  text-align: center;
+}
+/// Defines a global small badge style.
+/// Except background and text color which needs to be set as separate utility class on an element.
+/// @group ComponentClasses
+/// @name badge-sm
+/// @example <div class="badge-sm"></div>
+/// @author Franz Scholz
+.badge-sm {
+  max-height: 10px !important;
+  max-width: 10px !important;
+  min-height: 10px !important;
+  min-width: 10px !important;
+  border-radius: 14px;
+  text-align: center;
+}
+
+/// Defines a global medium badge style.
+/// Except background and text color which needs to be set as separate utility class on an element.
+/// @group ComponentClasses
+/// @name badge-md
+/// @example <div class="badge-md"></div>
+/// @author Franz Scholz
+.badge-md {
+  max-height: 15px !important;
+  max-width: 15px !important;
+  min-height: 15px !important;
+  min-width: 15px !important;
+  border-radius: 14px;
+  text-align: center;
+}
+
+/// Defines a global large badge style.
+/// Except background and text color which needs to be set as separate utility class on an element.
+/// @group ComponentClasses
+/// @name badge-lg
+/// @example <div class="badge-lg"></div>
+/// @author Franz Scholz
+.badge-lg {
+  max-height: 21px !important;
+  max-width: 21px !important;
+  min-height: 21px !important;
+  min-width: 21px !important;
+  border-radius: 14px;
+  text-align: center;
+}
+
+/// Defines a global extra large badge style.
+/// Except background and text color which needs to be set as separate utility class on an element.
+/// @group ComponentClasses
+/// @name badge-xl
+/// @example <div class="badge-xl"></div>
+/// @author Franz Scholz
+.badge-xl {
+  max-height: 28px !important;
+  max-width: 28px !important;
+  min-height: 28px !important;
+  min-width: 28px !important;
+  border-radius: 14px;
+  text-align: center;
+}

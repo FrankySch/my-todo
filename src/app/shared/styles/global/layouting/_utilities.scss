@@ -1,0 +1,1584 @@
+@import "app-variables-index";
+// @import "../app-variables-index";
+/*** LAYOUTING ***/
+
+/// The element will stay at its position no matter what.
+/// @group Utilities
+/// @name position-fixed
+/// @example <footer class="fixed">child html elements</footer>
+/// @author Franz Scholz
+.fixed {
+  position: fixed !important;
+}
+
+/// The element will overlay the elements in parent container if parent is relative
+/// The element will overlay all elements when a parent element is not set to relative
+/// @group Utilities
+/// @name position-absolute
+/// @example <div class="absolute">child html elements</div>
+/// @author Franz Scholz
+.absolute {
+  position: absolute !important;
+}
+
+/// The element can be adjust from its normal position (e.g. top, right, bottom, left)
+/// @group Utilities
+/// @name position-relative
+/// @example <div class="relative">child html elements</div>
+/// @author Franz Scholz
+.relative {
+  position: relative !important;
+}
+
+/// The element will be set to the top of the screen
+/// @group Utilities
+/// @name position-top
+/// @example <div class="top">child html elements</div>
+/// @author Franz Scholz
+.top {
+  top: 0 !important;
+}
+
+/// The element will be set to the right of the screen
+/// @group Utilities
+/// @name position-right
+/// @example <div class="right">child html elements</div>
+/// @author Franz Scholz
+.right {
+  right: 0 !important;
+}
+
+/// The element will be set to the bottom of the screen
+/// @group Utilities
+/// @name position-bottom
+/// @example <div class="bottom">child html elements</div>
+/// @author Franz Scholz
+.bottom {
+  bottom: 0 !important;
+}
+
+/// The element will be set to the left of the screen
+/// @group Utilities
+/// @name position-left
+/// @example <div class="left">child html elements</div>
+/// @author Franz Scholz
+.left {
+  left: 0 !important;
+}
+
+/// The element will be completely displayed out
+/// @group Utilities
+/// @name position-relative
+/// @example <div class="relative">child html elements</div>
+/// @author Franz Scholz
+.none {
+  display: none !important;
+}
+
+/// The element will be displayed as online
+/// @group Utilities
+/// @name position-relative
+/// @example <div class="relative">child html elements</div>
+/// @author Franz Scholz
+.inline {
+  display: inline !important;
+}
+
+/// Sets the the parent element to let the child element not overflow its parent under any circumstances
+/// @group Utilities
+/// @name overflow-hidden
+/// @example <div class="overflow-hidden">child html elements</div>
+/// @author Franz Scholz
+.overflow-hidden {
+  overflow: hidden;
+}
+/// Sets the the parent element to let the child element not overflow vertically its parent under any circumstances
+/// @group Utilities
+/// @name overflow-y-hidden
+/// @example <div class="overflow-y-hidden">child html elements</div>
+/// @author Franz Scholz
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+/// Sets the the parent element to let the child element not overflow horizontally its parent under any circumstances
+/// @group Utilities
+/// @name overflow-x-hidden
+/// @example <div class="overflow-x-hidden">child html elements</div>
+/// @author Franz Scholz
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+/// Sets the the parent element to let the content scroll if overflows in any direction
+/// @group Utilities
+/// @name overflow-scroll
+/// @example <div class="overflow-scroll">child html elements</div>
+/// @author Franz Scholz
+.overflow-scroll {
+  overflow: scroll;
+}
+/// Sets the the parent element to let the content scroll if overflows vertically
+/// @group Utilities
+/// @name overflow-y-scroll
+/// @example <div class="overflow-y-scroll">child html elements</div>
+/// @author Franz Scholz
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+/// Sets the the parent element to let the content scroll if overflows horizontally
+/// @group Utilities
+/// @name overflow-x-scroll
+/// @example <div class="overflow-x-scroll">child html elements</div>
+/// @author Franz Scholz
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+/// Sets the the parent element to let the content auto enable scroll bar if overflows in any direction
+/// @group Utilities
+/// @name overflow-auto
+/// @example <div class="overflow-auto">child html elements</div>
+/// @author Franz Scholz
+.overflow-auto {
+  overflow: auto;
+}
+/// Sets the the parent element to let the content auto enable scroll bar if overflows vertically
+/// @group Utilities
+/// @name overflow-y-auto
+/// @example <div class="overflow-y-auto">child html elements</div>
+/// @author Franz Scholz
+.overflow-y-auto {
+  overflow-y: auto;
+}
+/// Sets the the parent element to let the content auto enable scroll bar if overflows horizontally
+/// @group Utilities
+/// @name overflow-x-auto
+/// @example <div class="overflow-x-auto">child html elements</div>
+/// @author Franz Scholz
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+/// Rotates the element with 90deg clock around
+/// @group Utilities
+/// @name rotate-90
+/// @example <div class="rotate-90">element will be rotated with 90°</div>
+/// @author Franz Scholz
+.rotate-90 {
+  transform: rotate(90deg);
+}
+/// Rotates the element with 180deg clock around
+/// @group Utilities
+/// @name rotate-180
+/// @example <div class="rotate-180">element will be rotated with 180°</div>
+/// @author Franz Scholz
+.rotate-180 {
+  transform: rotate(180deg);
+}
+/// Rotates the element with 270deg clock around
+/// @group Utilities
+/// @name rotate-270
+/// @example <div class="rotate-270">element will be rotated with 270°</div>
+/// @author Franz Scholz
+.rotate-270 {
+  transform: rotate(270deg);
+}
+/// Rotates the element with 360deg clock around
+/// @group Utilities
+/// @name rotate-360
+/// @example <div class="rotate-360">element will be rotated with 360°</div>
+/// @author Franz Scholz
+.rotate-360 {
+  transform: rotate(360deg);
+}
+
+/// Sets an extra small height for an element
+/// @group Utilities
+/// @name height-xs
+/// @example <div class="ht-xs">Hier der Text</div>
+/// @author Franz Scholz
+.ht-xs {
+  height: $ht-xs !important;
+}
+/// Sets a small height for an element
+/// @group Utilities
+/// @name height-sm
+/// @example <div class="ht-sm">Hier der Text</div>
+/// @author Franz Scholz
+.ht-sm {
+  height: $ht-sm !important;
+}
+/// Sets the element height value for the .ht-md{} utility class
+/// @group Utilities
+/// @name height-md
+/// @example <div class="ht-md">Hier der Text</div>
+/// @author Franz Scholz
+.ht-md {
+  height: $ht-md !important;
+}
+/// Sets the element height value for the .ht-lg{} utility class
+/// @group Utilities
+/// @name height-lg
+/// @example <div class="ht-lg">Hier der Text</div>
+/// @author Franz Scholz
+.ht-lg {
+  height: $ht-lg !important;
+}
+/// Sets the element height to 100% of the parent element
+/// @group Utilities
+/// @name height-full
+/// @example <div class="ht-full">Hier der Text</div>
+/// @author Franz Scholz
+.ht-full {
+  height: $ht-full !important;
+}
+/// Sets the element height to 100% of the viewport / view-height
+/// @group Utilities
+/// @name height-full-vh
+/// @example <div class="ht-full-vh">Hier der Text</div>
+/// @author Franz Scholz
+.ht-full-vh {
+  height: $ht-full-vh !important;
+}
+
+/// Sets the parent element width to the width of the child element
+/// @group Utilities
+/// @name width-fit-content
+/// @example <div class="wt-fit-content">Hier der Text</div>
+/// @author Oliver Koch
+.wt-fit-content {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+/// Sets the element width value for the .wt-xs{} utility class
+/// @group Utilities
+/// @name width-xs
+/// @example <div class="wt-xs">Hier der Text</div>
+/// @author Franz Scholz
+.wt-xs {
+  width: $wt-xs !important;
+}
+/// Sets the element width value for the .wt-sm{} utility class
+/// @group Utilities
+/// @name width-sm
+/// @example <div class="wt-sm">Hier der Text</div>
+/// @author Franz Scholz
+.wt-sm {
+  width: $wt-sm !important;
+}
+/// Sets the element width value for the .wt-md{} utility class
+/// @group Utilities
+/// @name width-md
+/// @example <div class="wt-md">Hier der Text</div>
+/// @author Franz Scholz
+.wt-md {
+  width: $wt-md !important;
+}
+/// Sets the element width value for the .wt-lg{} utility class
+/// @group Utilities
+/// @name width-lg
+/// @example <div class="wt-lg">Hier der Text</div>
+/// @author Franz Scholz
+.wt-lg {
+  width: $wt-lg !important;
+}
+/// Sets the element width value to 100% of the parent element
+/// @group Utilities
+/// @name width-full
+/// @example <div class="wt-full">Hier der Text</div>
+/// @author Franz Scholz
+.wt-full {
+  width: $wt-full !important;
+}
+
+/// Sets the element margin value to the specified one and resetting the kendo display inline margin
+/// @group Utilities
+/// @name label-right
+/// @example <label class="label-right">Hier der Text</label>
+/// @author Franz Scholz
+.label-right {
+  margin-left: $label-right !important;
+  display: inline-block !important;
+}
+/// Sets the element margin value to the specified one and resetting the kendo display inline margin
+/// @group Utilities
+/// @name label-left
+/// @example <label class="label-left">Hier der Text</label>
+/// @author Franz Scholz
+.label-left {
+  margin-right: $label-left !important;
+  display: inline-block !important;
+}
+
+/*** FONTS ***/
+
+/// Let the word break when it reaches the end of the element width
+/// @group Utilities
+/// @name break-word
+/// @example <p class="break-word">Hier der Text</p>
+/// @author Franz Scholz
+.break-word {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/// Let the child word be shortened by three dots when it reaches the end of the element width
+/// @group Utilities
+/// @name shorten-word
+/// @example <p class="shorten-word">Hier der Text</p>
+/// @author Franz Scholz
+.shorten-word {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/// Sets the font alignment to center
+/// @group Utilities
+/// @name text-align-center
+/// @example <p class="text-center">Hier der Text</p>
+/// @author Franz Scholz
+.text-center {
+  text-align: center !important;
+}
+
+/// Sets the font alignment to right
+/// @group Utilities
+/// @name text-align-right
+/// @example <p class="text-right">Hier der Text</p>
+/// @author Franz Scholz
+.text-right {
+  text-align: right !important;
+}
+
+/// Sets the font alignment to left
+/// @group Utilities
+/// @name text-align-left
+/// @example <p class="text-left">Hier der Text</p>
+/// @author Franz Scholz
+.text-left {
+  text-align: left !important;
+}
+
+/// Sets the text to uppercase
+/// @group Utilities
+/// @name text-uppercase
+/// @example <p class="uppercase">Hier der Text</p>
+/// @author Franz Scholz
+.uppercase {
+  text-transform: uppercase;
+}
+
+/// Sets the text to lowercase
+/// @group Utilities
+/// @name text-lowercase
+/// @example <p class="lowercase">Hier der Text</p>
+/// @author Franz Scholz
+.lowercase {
+  text-transform: lowercase;
+}
+
+/// Sets the text to uppercase
+/// @group Utilities
+/// @name text-align-left
+/// @example <p class="text-left">Hier der Text</p>
+/// @author Franz Scholz
+.text-left {
+  text-align: left !important;
+}
+
+/// Sets the font size value for the .fs-xs{} utility class
+/// @group Utilities
+/// @name font-size-xs
+/// @example <p class="fs-xs">Hier der Text</p>
+/// @author Franz Scholz
+.fs-xs {
+  font-size: $fs-xs !important;
+}
+/// Sets the font size value for the .fs-sm{} utility class
+/// @group Utilities
+/// @name font-size-sm
+/// @example <p class="fs-sm">Hier der Text</p>
+/// @author Franz Scholz
+.fs-sm {
+  font-size: $fs-sm !important;
+}
+/// Sets the font size value for the .fs-md{} utility class
+/// @group Utilities
+/// @name font-size-md
+/// @example <p class="fs-md">Hier der Text</p>
+/// @author Franz Scholz
+.fs-md {
+  font-size: $fs-md !important;
+}
+/// Sets the font size value for the .fs-lg{} utility class
+/// @group Utilities
+/// @name font-size-lg
+/// @example <p class="fs-lg">Hier der Text</p>
+/// @author Franz Scholz
+.fs-lg {
+  font-size: $fs-lg !important;
+}
+/// Sets the font size value for the .fs-xl{} utility class
+/// @group Utilities
+/// @name font-size-xl
+/// @example <p class="fs-xl">Hier der Text</p>
+/// @author Franz Scholz
+.fs-xl {
+  font-size: $fs-xl !important;
+}
+
+/// Sets the font weight value for the .fw-xs{} utility class
+/// @group Utilities
+/// @name font-weight-xs
+/// @example <p class="fw-xs">Hier der Text</p>
+/// @author Franz Scholz
+.fw-xs {
+  font-weight: $fw-xs !important;
+}
+/// Sets the font weight value for the .fw-sm{} utility class
+/// @group Utilities
+/// @name font-weight-sm
+/// @example <p class="fw-sm">Hier der Text</p>
+/// @author Franz Scholz
+.fw-sm {
+  font-weight: $fw-sm !important;
+}
+/// Sets the font weight value for the .fw-md{} utility class
+/// @group Utilities
+/// @name font-weight-md
+/// @example <p class="fw-md">Hier der Text</p>
+/// @author Franz Scholz
+.fw-md {
+  font-weight: $fw-md !important;
+}
+/// Sets the font weight value for the .fw-lg{} utility class
+/// @group Utilities
+/// @name font-weight-lg
+/// @example <p class="fw-lg">Hier der Text</p>
+/// @author Franz Scholz
+.fw-lg {
+  font-weight: $fw-lg !important;
+}
+
+/// Sets the letter spacing values for the .ls-xs{} utility class
+/// @group Utilities
+/// @name letter-spacing-xs
+/// @example <p class="ls-xs">Hier der Text</p>
+/// @author Franz Scholz
+.ls-xs {
+  letter-spacing: $ls-xs !important;
+}
+/// Sets the letter spacing values for the .ls-sm{} utility class
+/// @group Utilities
+/// @name letter-spacing-sm
+/// @example <p class="ls-sm">Hier der Text</p>
+/// @author Franz Scholz
+.ls-sm {
+  letter-spacing: $ls-sm !important;
+}
+/// Sets the letter spacing values for the .ls-md{} utility class
+/// @group Utilities
+/// @name letter-spacing-md
+/// @example <p class="ls-md">Hier der Text</p>
+/// @author Franz Scholz
+.ls-md {
+  letter-spacing: $ls-md !important;
+}
+/// Sets the letter spacing values for the .ls-lg{} utility class
+/// @group Utilities
+/// @name letter-spacing-lg
+/// @example <p class="ls-lg">Hier der Text</p>
+/// @author Franz Scholz
+.ls-lg {
+  letter-spacing: $ls-lg !important;
+}
+
+// /// Sets the letter spacing values for the .ls-xs{} utility class
+// /// @group Utilities
+// /// @name letter-spacing-xs
+// /// @example <p class="ls-xs">Hier der Text</p>
+// /// @author Franz Scholz
+// .ls-xs {
+//   letter-spacing: $ls-xs !important;
+// }
+// /// Sets the letter spacing values for the .ls-sm{} utility class
+// /// @group Utilities
+// /// @name letter-spacing-sm
+// /// @example <p class="ls-sm">Hier der Text</p>
+// /// @author Franz Scholz
+// .ls-sm {
+//   letter-spacing: $ls-sm !important;
+// }
+// /// Sets the letter spacing values for the .ls-md{} utility class
+// /// @group Utilities
+// /// @name letter-spacing-md
+// /// @example <p class="ls-md">Hier der Text</p>
+// /// @author Franz Scholz
+// .ls-md {
+//   letter-spacing: $ls-md !important;
+// }
+// /// Sets the letter spacing values for the .ls-lg{} utility class
+// /// @group Utilities
+// /// @name letter-spacing-lg
+// /// @example <p class="ls-lg">Hier der Text</p>
+// /// @author Franz Scholz
+// .ls-lg {
+//   letter-spacing: $ls-lg !important;
+// }
+/// Sets the letter spacing values for the .ls-lg{} utility class
+/// @group Utilities
+/// @name letter-spacing-lg
+/// @example <p class="ls-lg">Hier der Text</p>
+/// @author Franz Scholz
+.lh-none {
+  line-height: 0 !important;
+}
+
+/*** SPACES ***/
+
+/// Sets padding to 0px for an element
+/// @group Utilities
+/// @name padding-none
+/// @example <div class="p-none">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.p-none {
+  padding: 0 !important;
+}
+/// Sets an extra small padding for an element
+/// @group Utilities
+/// @name padding-xs
+/// @example <div class="p-xs">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.p-xs {
+  padding: $p-xs !important;
+}
+/// Sets a small padding for an element
+/// @group Utilities
+/// @name padding-sm
+/// @example <div class="p-sm">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.p-sm {
+  padding: $p-sm !important;
+}
+/// Sets a medium padding for an element
+/// @group Utilities
+/// @name padding-md
+/// @example <div class="p-md">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.p-md {
+  padding: $p-md !important;
+}
+/// Sets a large padding for an element
+/// @group Utilities
+/// @name padding-lg
+/// @example <div class="p-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.p-lg {
+  padding: $p-lg !important;
+}
+/// Sets an extra large padding for an element
+/// @group Utilities
+/// @name padding-xl
+/// @example <div class="p-xl">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.p-xl {
+  padding: $p-xl !important;
+}
+
+/// Sets top-padding to 0px for an element
+/// @group Utilities
+/// @name padding-top-none
+/// @example <div class="pt-none">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pt-none {
+  padding-top: 0 !important;
+}
+/// Sets an extra small top-padding for an element
+/// @group Utilities
+/// @name padding-top-xs
+/// @example <div class="pt-xs">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pt-xs {
+  padding-top: $pt-xs !important;
+}
+/// Sets a small top-padding for an element
+/// @group Utilities
+/// @name padding-top-sm
+/// @example <div class="pt-sm">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pt-sm {
+  padding-top: $pt-sm !important;
+}
+/// Sets a medium top-padding for an element
+/// @group Utilities
+/// @name padding-top-md
+/// @example <div class="pt-md">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pt-md {
+  padding-top: $pt-md !important;
+}
+/// Sets a large top-padding for an element
+/// @group Utilities
+/// @name padding-top-lg
+/// @example <div class="p-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pt-lg {
+  padding-top: $pt-lg !important;
+}
+/// Sets an extra large padding for an element
+/// @group Utilities
+/// @name padding-top-xl
+/// @example <div class="pt-xl">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pt-xl {
+  padding: $pt-xl !important;
+}
+
+/// Sets right-padding to 0px for an element
+/// @group Utilities
+/// @name padding-right-none
+/// @example <div class="pr-none">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pr-none {
+  padding-right: 0 !important;
+}
+/// Sets an extra small right-padding for an element
+/// @group Utilities
+/// @name padding-right-xs
+/// @example <div class="pr-xs">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pr-xs {
+  padding-right: $pr-xs !important;
+}
+/// Sets a small right-padding for an element
+/// @group Utilities
+/// @name padding-right-sm
+/// @example <div class="pr-sm">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pr-sm {
+  padding-right: $pr-sm !important;
+}
+/// Sets a medium right-padding for an element
+/// @group Utilities
+/// @name padding-right-md
+/// @example <div class="pr-md">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pr-md {
+  padding-right: $pr-md !important;
+}
+/// Sets a large right-padding for an element
+/// @group Utilities
+/// @name padding-right-lg
+/// @example <div class="pr-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pr-lg {
+  padding-right: $pr-lg !important;
+}
+/// Sets an extra large padding for an element
+/// @group Utilities
+/// @name padding-right-xl
+/// @example <div class="pr-xl">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pr-xl {
+  padding: $pr-xl !important;
+}
+
+/// Sets bottom-padding to 0px for an element
+/// @group Utilities
+/// @name padding-bottom-none
+/// @example <div class="pb-none">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pb-none {
+  padding-bottom: 0 !important;
+}
+/// Sets an extra small bottom-padding for an element
+/// @group Utilities
+/// @name padding-bottom-xs
+/// @example <div class="pb-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pb-xs {
+  padding-bottom: $pb-xs !important;
+}
+/// Sets a small bottom-padding for an element
+/// @group Utilities
+/// @name padding-bottom-sm
+/// @example <div class="pb-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pb-sm {
+  padding-bottom: $pb-sm !important;
+}
+/// Sets a medium bottom-padding for an element
+/// @group Utilities
+/// @name padding-bottom-md
+/// @example <div class="pb-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pb-md {
+  padding-bottom: $pb-md !important;
+}
+/// Sets a large bottom-padding for an element
+/// @group Utilities
+/// @name padding-bottom-lg
+/// @example <div class="pb-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pb-lg {
+  padding-bottom: $pb-lg !important;
+}
+/// Sets an extra large padding for an element
+/// @group Utilities
+/// @name padding-bottom-xl
+/// @example <div class="pb-xl">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pb-xl {
+  padding: $pb-xl !important;
+}
+
+/// Sets left-padding to 0px for an element
+/// @group Utilities
+/// @name padding-left-none
+/// @example <div class="p-none">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pl-none {
+  padding-left: 0 !important;
+}
+/// Sets an extra small left-padding for an element
+/// @group Utilities
+/// @name padding-left-xs
+/// @example <div class="pl-xs">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pl-xs {
+  padding-left: $pl-xs !important;
+}
+/// Sets a small left-padding for an element
+/// @group Utilities
+/// @name padding-left-sm
+/// @example <div class="pl-sm">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pl-sm {
+  padding-left: $pl-sm !important;
+}
+/// Sets a medium left-padding for an element
+/// @group Utilities
+/// @name padding-left-md
+/// @example <div class="pl-md">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pl-md {
+  padding-left: $pl-md !important;
+}
+/// Sets a large left-padding for an element
+/// @group Utilities
+/// @name padding-left-lg
+/// @example <div class="pl-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pl-lg {
+  padding-left: $pl-lg !important;
+}
+/// Sets an extra large padding for an element
+/// @group Utilities
+/// @name padding-left-xl
+/// @example <div class="pl-xl">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.pl-xl {
+  padding: $pl-xl !important;
+}
+
+// TODO: weiteres margin top, right, bottom, left einfügen wie padding
+/// Sets margin to 0px for an element
+/// @group Utilities
+/// @name margin-none
+/// @example <div class="m-none">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.m-none {
+  margin: 0 !important;
+}
+/// Sets an extra small margin for an element
+/// @group Utilities
+/// @name margin-xs
+/// @example <div class="m-xs">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.m-xs {
+  margin: $m-xs !important;
+}
+/// Sets a small margin for an element
+/// @group Utilities
+/// @name margin-sm
+/// @example <div class="m-sm">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.m-sm {
+  margin: $m-sm !important;
+}
+/// Sets a medium margin for an element
+/// @group Utilities
+/// @name margin-md
+/// @example <div class="m-md">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.m-md {
+  margin: $m-md !important;
+}
+/// Sets a large margin for an element
+/// @group Utilities
+/// @name margin-lg
+/// @example <div class="m-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.m-lg {
+  margin: $m-lg !important;
+}
+/// Sets an extra small margin-top for an element
+/// @group Utilities
+/// @name margin-top-xs
+/// @example <div class="mt-xs">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mt-xs {
+  margin-top: $mt-xs !important;
+}
+/// Sets a small margin-top for an element
+/// @group Utilities
+/// @name margin-top-sm
+/// @example <div class="mt-sm">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mt-sm {
+  margin-top: $mt-sm !important;
+}
+/// Sets a medium margin-top for an element
+/// @group Utilities
+/// @name margin-top-md
+/// @example <div class="mt-md">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mt-md {
+  margin-top: $mt-md !important;
+}
+/// Sets a large margin-top for an element
+/// @group Utilities
+/// @name margin-top-lg
+/// @example <div class="mt-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mt-lg {
+  margin-top: $mt-lg !important;
+}
+/// Sets a extra large margin-top for an element
+/// @group Utilities
+/// @name margin-top-xlg
+/// @example <div class="mt-xlg">Hier das Element oder Text</div>
+/// @author Jutta Schwengsbier
+.mt-xlg {
+  margin-top: $mt-xlg !important;
+}
+/// Sets an extra small margin-right for an element
+/// @group Utilities
+/// @name margin-right-xs
+/// @example <div class="mr-xs">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mr-xs {
+  margin-right: $mr-xs !important;
+}
+/// Sets a small margin-right for an element
+/// @group Utilities
+/// @name margin-right-sm
+/// @example <div class="mr-sm">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mr-sm {
+  margin-right: $mr-sm !important;
+}
+/// Sets a medium margin-right for an element
+/// @group Utilities
+/// @name margin-right-md
+/// @example <div class="mr-md">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mr-md {
+  margin-right: $mr-md !important;
+}
+/// Sets a large margin-right for an element
+/// @group Utilities
+/// @name margin-right-lg
+/// @example <div class="mr-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mr-lg {
+  margin-right: $mr-lg !important;
+}
+/// Sets an extra small margin-bottom for an element
+/// @group Utilities
+/// @name margin-bottom-xs
+/// @example <div class="mb-xs">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mb-xs {
+  margin-bottom: $mb-xs !important;
+}
+/// Sets a small margin-bottom for an element
+/// @group Utilities
+/// @name margin-bottom-sm
+/// @example <div class="mb-sm">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mb-sm {
+  margin-bottom: $mb-sm !important;
+}
+/// Sets a medium margin-bottom for an element
+/// @group Utilities
+/// @name margin-bottom-md
+/// @example <div class="mb-md">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mb-md {
+  margin-bottom: $mb-md !important;
+}
+/// Sets a large margin-bottom for an element
+/// @group Utilities
+/// @name margin-bottom-lg
+/// @example <div class="mb-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.mb-lg {
+  margin-bottom: $mb-lg !important;
+}
+/// Sets an extra small margin-left for an element
+/// @group Utilities
+/// @name margin-left-xs
+/// @example <div class="ml-xs">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.ml-xs {
+  margin-left: $ml-xs !important;
+}
+/// Sets a small margin-left for an element
+/// @group Utilities
+/// @name margin-left-sm
+/// @example <div class="ml-sm">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.ml-sm {
+  margin-left: $ml-sm !important;
+}
+/// Sets a medium margin-left for an element
+/// @group Utilities
+/// @name margin-left-md
+/// @example <div class="ml-md">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.ml-md {
+  margin-left: $ml-md !important;
+}
+/// Sets a large margin-left for an element
+/// @group Utilities
+/// @name margin-left-lg
+/// @example <div class="ml-lg">Hier das Element oder Text</div>
+/// @author Franz Scholz
+.ml-lg {
+  margin-left: $ml-lg !important;
+}
+
+/*** COLORS ***/
+
+/// Sets the background-color for an element to transparent
+/// @group Utilities
+/// @name background-transparent
+/// @example <div class="bg-transparent">Hier das Element</div>
+/// @author Franz Scholz
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+/// Sets no border to an element
+/// @group Utilities
+/// @name border-none
+/// @example <div class="border-none">Hier das Element</div>
+/// @author Franz Scholz
+.border-none {
+  border: none !important;
+}
+
+/// Sets the border-color for an element to transparent
+/// @group Utilities
+/// @name border-color-transparent
+/// @example <div class="bc-transparent">Hier das Element</div>
+/// @author Franz Scholz
+.bc-transparent {
+  border-color: transparent !important;
+}
+
+/// Sets a black font color for an element
+/// @group Utilities
+/// @name black
+/// @example <p class="black">Hier der Text</p>
+/// @author Franz Scholz
+.black {
+  color: $black !important;
+}
+/// Sets a lighter black font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name black-1
+/// @example <p class="black-1">Hier der Text</p>
+/// @author Franz Scholz
+.black-1 {
+  color: $black-1 !important;
+}
+/// Sets a lighter black font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name black-2
+/// @example <p class="black-2">Hier der Text</p>
+/// @author Franz Scholz
+.black-2 {
+  color: $black-2 !important;
+}
+/// Sets a lighter black font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name black-3
+/// @example <p class="black-3">Hier der Text</p>
+/// @author Franz Scholz
+.black-3 {
+  color: $black-3 !important;
+}
+/// Sets a black background-color for an element
+/// @group Utilities
+/// @name bg-black
+/// @example <div class="bg-black">Hier das Element</div>
+/// @author Franz Scholz
+.bg-black {
+  background-color: $bg-black !important;
+}
+/// Sets a lighter black background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-black-1
+/// @example <div class="bg-black-1">Hier das Element</div>
+/// @author Franz Scholz
+.bg-black-1 {
+  background-color: $bg-black-1 !important;
+}
+/// Sets a lighter black background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-black-2
+/// @example <div class="bg-black-2">Hier das Element</div>
+/// @author Franz Scholz
+.bg-black-2 {
+  background-color: $bg-black-2 !important;
+}
+/// Sets a lighter black background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-black-3
+/// @example <div class="bg-black-3">Hier das Element</div>
+/// @author Franz Scholz
+.bg-black-3 {
+  background-color: $bg-black-3 !important;
+}
+/// Sets a white font color for an element
+/// @group Utilities
+/// @name white
+/// @example <p class="white">Hier der Text</p>
+/// @author Franz Scholz
+.white {
+  color: $white !important;
+}
+/// Sets a darker white font color for an element
+/// The higher the number the darker it gets
+/// @group Utilities
+/// @name white-1
+/// @example <p class="white-1">Hier der Text</p>
+/// @author Franz Scholz
+.white-1 {
+  color: $white-1 !important;
+}
+/// Sets a darker white font color for an element
+/// The higher the number the darker it gets
+/// @group Utilities
+/// @name white-2
+/// @example <p class="white-2">Hier der Text</p>
+/// @author Franz Scholz
+.white-2 {
+  color: $white-2 !important;
+}
+/// Sets a darker white font color for an element
+/// The higher the number the darker it gets
+/// @group Utilities
+/// @name white-3
+/// @example <p class="white-3">Hier der Text</p>
+/// @author Franz Scholz
+.white-3 {
+  color: $white-3 !important;
+}
+/// Sets a white background color for an element
+/// @group Utilities
+/// @name bg-white
+/// @example <div class="bg-white">Hier das Element</div>
+/// @author Franz Scholz
+.bg-white {
+  background-color: $bg-white !important;
+}
+/// Sets a lighter white background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-white-1
+/// @example <div class="bg-white-1">Hier das Element</div>
+/// @author Franz Scholz
+.bg-white-1 {
+  background-color: $bg-white-1 !important;
+}
+/// Sets a lighter white background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-white-2
+/// @example <div class="bg-white-2">Hier das Element</div>
+/// @author Franz Scholz
+.bg-white-2 {
+  background-color: $bg-white-2 !important;
+}
+/// Sets a lighter white background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-white-3
+/// @example <div class="bg-white-3">Hier das Element</div>
+/// @author Franz Scholz
+.bg-white-3 {
+  background-color: $bg-white-3 !important;
+}
+
+/// Sets a red font color for an element
+/// @group Utilities
+/// @name red
+/// @example <p class="red">Hier der Text</p>
+/// @author Franz Scholz
+.red {
+  color: $red !important;
+}
+/// Sets a lighter red font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name red-1
+/// @example <p class="red-1">Hier der Text</p>
+/// @author Franz Scholz
+.red-1 {
+  color: $red-1 !important;
+}
+/// Sets a lighter red font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name red-2
+/// @example <p class="red-2">Hier der Text</p>
+/// @author Franz Scholz
+.red-2 {
+  color: $red-2 !important;
+}
+/// Sets a lighter red font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name red-3
+/// @example <p class="red-3">Hier der Text</p>
+/// @author Franz Scholz
+.red-3 {
+  color: $red-3 !important;
+}
+/// Sets a red background-color for an element
+/// @group Utilities
+/// @name bg-red
+/// @example <div class="bg-red">Hier das Element</div>
+/// @author Franz Scholz
+.bg-red {
+  background-color: $bg-red !important;
+}
+/// Sets a lighter red background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-red-1
+/// @example <div class="bg-red-1">Hier das Element</div>
+/// @author Franz Scholz
+.bg-red-1 {
+  background-color: $bg-red-1 !important;
+}
+/// Sets a lighter red background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-red-2
+/// @example <div class="bg-red-2">Hier das Element</div>
+/// @author Franz Scholz
+.bg-red-2 {
+  background-color: $bg-red-2 !important;
+}
+/// Sets a lighter red background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-red-3
+/// @example <div class="bg-red-3">Hier das Element</div>
+/// @author Franz Scholz
+.bg-red-3 {
+  background-color: $bg-red-3 !important;
+}
+
+/// Sets kendo-base background color for an element
+/// @group Utilities
+/// @name bg-base
+/// @example <div class="bg-base">Hier das Element</div>
+/// @author Franz Scholz
+.bg-base {
+  background-color: $base-bg-color !important; // from _index.scss (_kendo-variables.scss)
+}
+
+/// Sets kendo-warning background color for an element
+/// @group Utilities
+/// @name bg-yellow
+/// @example <div class="bg-yellow">Hier das Element</div>
+/// @author Franz Scholz
+.bg-yellow {
+  background-color: $warning !important; // from _index.scss (_kendo-variables.scss)
+}
+
+/// Sets kendo-success background color for an element
+/// @group Utilities
+/// @name bg-green
+/// @example <div class="bg-green">Hier das Element</div>
+/// @author Franz Scholz
+.bg-green {
+  background-color: $bg-green !important; // from _index.scss (_kendo-variables.scss)
+}
+/// Sets a lighter green background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-green-1
+/// @example <div class="bg-green-1">Hier das Element</div>
+/// @author Franz Scholz
+.bg-green-1 {
+  background-color: $bg-green-1 !important;
+}
+/// Sets a lighter green background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-green-2
+/// @example <div class="bg-green-2">Hier das Element</div>
+/// @author Franz Scholz
+.bg-green-2 {
+  background-color: $bg-green-2 !important;
+}
+/// Sets a lighter green background-color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name bg-green-3
+/// @example <div class="bg-green-3">Hier das Element</div>
+/// @author Franz Scholz
+.bg-green-3 {
+  background-color: $bg-green-3 !important;
+}
+
+/// Sets a green font color for an element
+/// @group Utilities
+/// @name green
+/// @example <p class="green">Hier der Text</p>
+/// @author Franz Scholz
+.green {
+  color: $green !important;
+}
+/// Sets a lighter green font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name green-1
+/// @example <p class="green-1">Hier der Text</p>
+/// @author Franz Scholz
+.green-1 {
+  color: $green-1 !important;
+}
+/// Sets a lighter green font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name green-2
+/// @example <p class="green-2">Hier der Text</p>
+/// @author Franz Scholz
+.green-2 {
+  color: $green-2 !important;
+}
+/// Sets a lighter green font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name green-3
+/// @example <p class="green-3">Hier der Text</p>
+/// @author Franz Scholz
+.green-3 {
+  color: $green-3 !important;
+}
+
+/// Sets kendo-info background color for an element
+/// @group Utilities
+/// @name bg-blue
+/// @example <div class="bg-blue">Hier das Element</div>
+/// @author Franz Scholz
+.bg-blue {
+  background-color: $bg-blue !important;
+}
+/// Sets a lighter blue background color for an element
+/// @group Utilities
+/// @name bg-blue-1
+/// @example <div class="bg-blue-1">Hier das Element</div>
+/// @author Franz Scholz
+.bg-blue-1 {
+  background-color: $bg-blue-1 !important;
+}
+/// Sets lighter blue background color for an element
+/// @group Utilities
+/// @name bg-blue-2
+/// @example <div class="bg-blue-2">Hier das Element</div>
+/// @author Franz Scholz
+.bg-blue-2 {
+  background-color: $bg-blue-2 !important;
+}
+/// Sets lighter blue background color for an element
+/// @group Utilities
+/// @name bg-blue-3
+/// @example <div class="bg-blue-3">Hier das Element</div>
+/// @author Franz Scholz
+.bg-blue-3 {
+  background-color: $bg-blue-3 !important;
+}
+
+/// Sets a blue font color for an element
+/// @group Utilities
+/// @name blue
+/// @example <p class="blue">Hier der Text</p>
+/// @author Franz Scholz
+.blue {
+  color: $blue !important;
+}
+/// Sets a lighter blue font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name blue-1
+/// @example <p class="blue-1">Hier der Text</p>
+/// @author Franz Scholz
+.blue-1 {
+  color: $blue-1 !important;
+}
+/// Sets a lighter blue font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name blue-2
+/// @example <p class="blue-2">Hier der Text</p>
+/// @author Franz Scholz
+.blue-2 {
+  color: $blue-2 !important;
+}
+/// Sets a lighter blue font color for an element
+/// The higher the number the lighter it gets
+/// @group Utilities
+/// @name blue-3
+/// @example <p class="blue-3">Hier der Text</p>
+/// @author Franz Scholz
+.blue-3 {
+  color: $blue-3 !important;
+}
+
+/// Sets a gold font color for an element
+/// @group Utilities
+/// @name gold
+/// @example <p class="gold">Hier der Text</p>
+/// @author Franz Scholz
+.gold {
+  color: $gold !important;
+}
+/// Sets a gold background color for an element
+/// @group Utilities
+/// @name bg-gold
+/// @example <div class="bg-gold">Hier das Element</div>
+/// @author Franz Scholz
+.bg-gold {
+  background-color: $gold !important;
+}
+
+/*** APPERANCE ***/
+
+.scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 12px; // for horizental scrolling having the same width
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: #f4f3ef;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #bababa;
+  border-radius: 12px;
+}
+
+/// Sets the visibility to not visible
+/// @group Utilities
+/// @name opacity-0
+/// @example <div class="opacity-0">Hier das Element</div>
+/// @author Franz Scholz
+.opacity-0 {
+  opacity: 0 !important;
+}
+/// Sets the visibility to visible
+/// @group Utilities
+/// @name opacity-1
+/// @example <div class="opacity-1">Hier das Element</div>
+/// @author Franz Scholz
+.opacity-1 {
+  opacity: 1 !important;
+}
+/// Gives a little transparent look (75% still visible)
+/// @group Utilities
+/// @name opacity-xs
+/// @example <div class="opacity-xs">Hier das Element</div>
+/// @author Franz Scholz
+.opacity-xs {
+  opacity: $opacity-xs !important;
+}
+/// Gives a small transparent look (50% still visible)
+/// @group Utilities
+/// @name opacity-sm
+/// @example <div class="opacity-sm">Hier das Element</div>
+/// @author Franz Scholz
+.opacity-sm {
+  opacity: $opacity-sm !important;
+}
+/// Gives a medium transparent look (50% still visible)
+/// @group Utilities
+/// @name opacity-md
+/// @example <div class="opacity-md">Hier das Element</div>
+/// @author Franz Scholz
+.opacity-md {
+  opacity: $opacity-md !important;
+}
+/// Gives a large transparent look (7% still visible)
+/// @group Utilities
+/// @name opacity-lg
+/// @example <div class="opacity-lg">Hier das Element</div>
+/// @author Franz Scholz
+.opacity-lg {
+  opacity: $opacity-lg !important;
+}
+
+/// Gives a blurred transparent look
+/// The Element can get no other background value
+/// @group Utilities
+/// @name background-blurred
+/// @example <div class="bg-blurred">Hier das Element</div>
+/// @author Franz Scholz
+.bg-blurred {
+  background: #e5e6e2 0% 0% no-repeat padding-box;
+}
+
+/// Sets an extra small border-radius for an element
+/// @group Utilities
+/// @name border-radius-xs
+/// @example <div class="br-xs">Hier das Element</div>
+/// @author Franz Scholz
+.br-xs {
+  border-radius: $br-xs !important;
+}
+/// Sets a small border-radius for an element
+/// @group Utilities
+/// @name border-radius-sm
+/// @example <div class="br-sm">Hier das Element</div>
+/// @author Franz Scholz
+.br-sm {
+  border-radius: $br-sm !important;
+}
+/// Sets a medium border-radius for an element
+/// @group Utilities
+/// @name border-radius-md
+/// @example <div class="br-md">Hier das Element</div>
+/// @author Franz Scholz
+.br-md {
+  border-radius: $br-md !important;
+}
+/// Sets a large border-radius for an element
+/// @group Utilities
+/// @name border-radius-lg
+/// @example <div class="br-lg">Hier das Element</div>
+/// @author Franz Scholz
+.br-lg {
+  border-radius: $br-lg !important;
+}
+
+/*** Pointer ***/
+.auto {
+  cursor: auto;
+}
+.default {
+  cursor: default;
+}
+.none {
+  cursor: none;
+}
+.context-menu {
+  cursor: context-menu;
+}
+.help {
+  cursor: help;
+}
+.pointer {
+  cursor: pointer;
+}
+.progress {
+  cursor: progress;
+}
+.wait {
+  cursor: wait;
+}
+.cell {
+  cursor: cell;
+}
+.crosshair {
+  cursor: crosshair;
+}
+.text {
+  cursor: text;
+}
+.vertical-text {
+  cursor: vertical-text;
+}
+.alias {
+  cursor: alias;
+}
+.copy {
+  cursor: copy;
+}
+.move {
+  cursor: move;
+}
+.no-drop {
+  cursor: no-drop;
+}
+.not-allowed {
+  cursor: not-allowed;
+}
+.all-scroll {
+  cursor: all-scroll;
+}
+.col-resize {
+  cursor: col-resize;
+}
+.row-resize {
+  cursor: row-resize;
+}
+.n-resize {
+  cursor: n-resize;
+}
+.e-resize {
+  cursor: e-resize;
+}
+.s-resize {
+  cursor: s-resize;
+}
+.w-resize {
+  cursor: w-resize;
+}
+.ns-resize {
+  cursor: ns-resize;
+}
+.ew-resize {
+  cursor: ew-resize;
+}
+.ne-resize {
+  cursor: ne-resize;
+}
+.nw-resize {
+  cursor: nw-resize;
+}
+.se-resize {
+  cursor: se-resize;
+}
+.sw-resize {
+  cursor: sw-resize;
+}
+.nesw-resize {
+  cursor: nesw-resize;
+}
+.nwse-resize {
+  cursor: nwse-resize;
+}
+.pointer-deactivate {
+  pointer-events: none;
+  cursor: default;
+}

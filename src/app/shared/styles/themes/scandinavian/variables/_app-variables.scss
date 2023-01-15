@@ -1,0 +1,99 @@
+/*** INFO: Contains all variables that are globally changeable in the hades app ***/
+
+/** COLORS AND Color GRADIATIONS **/
+$dark-theme: false;
+
+$primary: #009dcc; // next, continue, save, open
+$secondary: #add0b6; // optional functions etc.
+$tertiary: #f2f2f2; // abort, reject, cancel
+
+$info: #1774ff;
+$success: #8ee654;
+$warning: #edd188;
+$error: #c44444; // or #df2437
+
+$black: #000000;
+$black-1: #474747;
+$black-2: #495057;
+$black-3: #6d767e;
+
+$bg-black: #000000;
+$bg-black-1: #474747;
+$bg-black-2: #495057;
+$bg-black-3: #6d767e;
+
+$white: #ffffff;
+$white-1: #dbdbdb;
+$white-2: #c2c2c2;
+$white-3: #a9a9a9;
+
+$bg-white: #ffffff;
+$bg-white-1: #f2f2f2;
+$bg-white-2: #c2c2c2;
+$bg-white-3: #b1b1b1;
+
+$red: $error; // = $error of kend-variables
+$red-1: #f07575;
+$red-2: #f38b8b;
+$red-3: #ffdede;
+
+$bg-red: $error; // = $error of kend-variables
+$bg-red-1: #f07575;
+$bg-red-2: #f38b8b;
+$bg-red-3: #ffdede;
+
+$green: $secondary; // = $error of kend-variables
+$green-1: #c8e2cf;
+$green-2: #dcf3e2;
+$green-3: #eff6f0;
+
+$bg-green: $secondary; // = $error of kend-variables
+$bg-green-1: #c8e2cf;
+$bg-green-2: #dcf3e2;
+$bg-green-3: #eff6f0;
+
+$blue: $info;
+$blue-1: #0eaedf;
+$blue-2: #20bbeb;
+$blue-3: #54c5e7;
+
+$bg-blue: #0f8bd5;
+$bg-blue-1: #0eaedf;
+$bg-blue-2: #7dd6f1; // vorher #5dccee
+$bg-blue-3: #c9e0e7; // vorher #92d4e8
+
+$gold: #a09276;
+// -> other single colors are yet stored directly as utility class from kendo variables (info, warning, success, error, ...)
+
+/** outer stylings **/
+$border-radius: 12px;
+$box-shadow: "";
+
+/** Hovered **/
+$hovering-text-color: $black-1;
+$hovering-bg-color: #f4f3ef;
+$hovering-link-text-color: #009dcc;
+
+/** Selected **/
+$selected-text-color: #ffffff;
+$selected-bg-color: "";
+
+/** Disabled **/
+$disabled-text-color: #8f8f8f;
+$disabled-bg-color: "";
+
+/** Stateless **/
+$body-text-color: #000000;
+$body-bg-color: #ffffff;
+$base-text-color: #009dcc;
+$base-bg-color: #f4f3ef;
+$input-placeholder-text-color: "";
+$base-heading-text-color: #212529;
+$base-subtitle-text-color: #6c757d;
+
+/** elements **/
+$elements-text-color: #000000; //#212529
+$elements-bg-color: #ffffff;
+$button-text-color: #000000;
+$button-bg-color: #b4cfb8;
+$link-text-color: #009dcc;

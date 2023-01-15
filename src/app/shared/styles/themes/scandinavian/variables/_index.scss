@@ -1,0 +1,36 @@
+/// Imports every for the app needed variables.
+/// Attention: Imported variables need to be declared in every component where needed.
+/// @group StyleImports
+/// @name Import of _index.scss
+/// @example
+///  @import 'theming'
+///  @include variables();
+/// @author Franz Scholz
+$onlyForPreviewingAnImportInSassDoc: SeeBelow;
+/// See example below. This file imports every style that should be applied at root level or are later needed per component
+/// Attention: Keep the given ordern. Almost every style files depends on the files above
+/// @group StyleImports
+/// @name Content imports of _index.scss
+/// @example includes in given order below:
+/// @example @import './app-variablese';
+/// @example @import './utility-variables';
+/// @author Franz Scholz
+$onlyForPreviewingAnImportInSassDoc: SeeBelow;
+@import "./app-variables"; // first thing that is mapped to new @import style
+@import "./utility-variables"; // TODO:  move to @import like app-variables in the whole app
+
+/// Imports variables, that matches the app/theme style
+/// Attention: Class definitions are globally accessible when imported in the root file. Variables, mixins and functions, however, are only available in the component where they were imported!
+/// @group StyleImports
+/// @name _app-variables.scss
+/// @example @import 'app-variables' as app-variables;
+/// @author Franz Scholz
+$onlyForPreviewingAnImportInSassDoc: SeeBelow;
+
+/// Imports variables, that matches the app/theme style
+/// Attention: Class definitions are globally accessible when imported in the root file. Variables, mixins and functions, however, are only available in the component where they were imported!
+/// @group StyleImports
+/// @name _utility-variables.scss
+/// @example @import 'utility-variables' as utilities;
+/// @author Franz Scholz
+$onlyForPreviewingAnImportInSassDoc: SeeBelow;
