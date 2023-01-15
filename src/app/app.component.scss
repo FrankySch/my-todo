@@ -1,0 +1,19 @@
+$header-height: auto !important;
+$conten-fit-height: 1fr !important;
+$footer-height: 57px !important;
+.wrapper {
+  height: 100vh !important;
+  display: grid !important;
+  grid-template-rows: $header-height $conten-fit-height $footer-height !important;
+  // grid-template-rows: auto 1fr 57px !important; // for understanding: 1st set header height, 2nd set content height to fit between header and footer, 3rd set footer height
+}
+
+header {
+  background-color: #ffffff;
+}
+
+footer {
+  height: $footer-height !important;
+  z-index: 5 !important;
+  background-color: #ffffff;
+}

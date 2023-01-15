@@ -1,7 +1,6 @@
 // import theme file always on top to load the variables before the components. The components are using the theme variables
-@import "app-variables-index";
+// @import "app-variables-index";
 
-@import "./component-libraries/nova-index";
 @import "./components/index";
 @import "./icons/third-party-icons";
 @import "./layouting/breakpoints";
