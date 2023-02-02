@@ -22,7 +22,7 @@ export class HomeComponent {
 
     headers.append('GET', 'POST');
 
-    fetch('http://localhost:3000/data', {
+    fetch('http://localhost:3000/myTodos', {
       // mode: 'no-cors',
       credentials: 'include',
       method: 'GET',
@@ -34,7 +34,7 @@ export class HomeComponent {
       .catch((err) => console.error(err));
     return false;
 
-    this.httpClient.get('http://localhost:3000/data');
+    // // this.httpClient.get('http://localhost:3000/myTodos'); //just ignoring observables
   }
 
   writeJson() {

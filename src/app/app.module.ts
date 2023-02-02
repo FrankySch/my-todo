@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
+import { ApiServiceService } from './core/services/api-service/api-service.service';
+import { StoreServiceService } from './core/services/store-service/store-service.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     FlexLayoutModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [ApiServiceService, StoreServiceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

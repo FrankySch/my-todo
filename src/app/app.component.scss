@@ -1,10 +1,10 @@
 $header-height: auto;
-$conten-fit-height: 1fr;
+$content-fit-height: 1fr;
 $footer-height: 57px;
 .wrapper {
   height: 100vh;
   display: grid;
-  grid-template-rows: $header-height $conten-fit-height $footer-height;
+  grid-template-rows: $header-height $content-fit-height $footer-height;
   // grid-template-rows: auto 1fr 57px; // for understanding: 1st set header height, 2nd set content height to fit between header and footer, 3rd set footer height
 }
 
